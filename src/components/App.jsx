@@ -15,17 +15,6 @@ const App = () => {
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
 
-  // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-  // const handleChange = event => {
-  // const { name } = event.target;
-  // this.setState(state => {
-  //   return { [name]: state[name] + 1 };
-  // });
-  // setGood(event.target.good + 1);
-  // setNeutral(event.target.neutral + 1);
-  // setNeutral(event.target.bad + 1);
-  // };
-
   const handleChange = event => {
     switch (event.target.name) {
       case 'good':
@@ -66,7 +55,6 @@ const App = () => {
     >
       <SectionTitle title="Please leave your feedback">
         <FeedbackOptions
-          // !!!!!!!!!!
           optionsArr={['good', 'neutral', 'bad']}
           onLeaveFeedback={handleChange}
         />
